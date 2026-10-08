@@ -120,7 +120,55 @@ transform:translateY(0);
 .cta{padding:75px 0;background:#e9e7e0;color:#0b0c0e}.cta-in{display:flex;justify-content:space-between;align-items:center;gap:40px}.cta h2{font-size:clamp(35px,5vw,60px);line-height:1;margin:0;letter-spacing:-.05em}.cta p{color:#55585c}.cta .primary{background:#0b0c0e;color:white}.contact{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contact h2{font-size:44px;margin:0}.contact p{color:var(--muted)}.details{display:grid;grid-template-columns:1fr 1fr;gap:12px}.detail{border:1px solid var(--line);padding:20px;border-radius:7px}.detail small{color:#777b82}.detail strong{display:block;margin-top:5px}
 footer{padding:30px 0;border-top:1px solid var(--line);color:#777b82;font-size:12px}.foot{display:flex;justify-content:space-between}
 @media(max-width:800px){.links{display:none}.hero{padding-top:110px}.hero-grid,.contact,.showcase{grid-template-columns:1fr}.hero-card{height:330px}.cards,.process{grid-template-columns:1fr}.section-head,.cta-in{display:block}.cta-in .actions{margin-top:25px}.step,.step:not(:first-child){padding:25px 0;border-right:0;border-bottom:1px solid var(--line)}.details{grid-template-columns:1fr}}
-</style>
+@media (max-width: 800px) {
+  .hero {
+    min-height: 100svh;
+    padding-top: 76px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-content {
+    width: 100%;
+    display: block;
+    padding: 45px 28px 50px;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(46px, 13vw, 64px);
+    line-height: .92;
+    letter-spacing: -.045em;
+    margin: 16px 0 22px;
+  }
+
+  .hero p {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .actions {
+    margin-top: 25px;
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 13px 18px;
+  }
+
+  .hero-card {
+    display: none;
+  }
+
+  nav .links {
+    display: none;
+  }
+}</style>
 </head>
 <body>
 <nav><div class="wrap navin"><a class="logo" href="#top" aria-label="Costa Blanca Detailing"><img src="costa_blanca_logo_header.png" alt="Costa Blanca Detailing"></a><div class="links"><a href="#services" data-i18n="navServices">Services</a><a href="#work" data-i18n="navWork">Our work</a><a href="#process" data-i18n="navProcess">Process</a><a href="#contact" data-i18n="navContact">Contact</a></div><div style="display:flex;align-items:center"><div class="lang" aria-label="Language selector"><button class="active" data-lang="es">ES</button><button data-lang="en">EN</button><button data-lang="uk">UA</button></div><a class="navcta" href="#contact" data-i18n="navBook">Book a detail</a></div></div></nav>
